@@ -227,6 +227,7 @@ class QtConan(ConanFile):
         if self.settings.build_type == "Debug":
             args.append("-debug")
         elif self.settings.build_type == "RelWithDebInfo":
+            args.append("-release")
             args.append("-force_debug_info")
         else:
             args.append("-release")
